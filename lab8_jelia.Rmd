@@ -1,0 +1,41 @@
+---
+title: "lab8_jelia"
+author: "James Elia"
+date: "10/19/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("ggtree")
+BiocManager::install("treeio")
+library(tidyverse)
+library(ggtree)
+library(treeio)
+browseVignettes("ggtree")
+```
+```{r}
+tree <- read.tree("~/UMass/tree_newick.nwk")
+ggtree(tree)
+ggtree(tree) + theme_tree2()
+ggtree(tree, branch.length="none", color="blue", size=2, linetype=3)
+ggtree(tree, layout='slanted')
+ggtree(tree,layout='circular')
+ggtree(tree,layout='circular', branch.length="none", color="red",size=3)
+ggtree(tree) + geom_tiplab(color="purple") + geom_tippoint(color="purple") + geom_nodepoint(color="yellow", alpha = 5, size = 4)
+ggtree(tree) + geom_text(aes(label=node), hjust=-.3)
+
+ggtree(tree) + theme_tree2() + geom_tiplab() + geom_hilight(node=19, fill="gold") + geom_hilight(node=23, fill="blue") + geom_taxalink(3,5, curvature=.5, linetype=2) + geom_taxalink(7,10, curvature=.5, linetype=2) + geom_cladelabel(node=17, label="Superclade 17", 
+                  color="red2", offset=-7, align=TRUE)
+```
+```{r}
+fasttree <- read.tree("C:/Users/eliaj/OneDrive/Documents/UMass/fastree_result.tre")
+ggtree(fasttree, layout='slanted') + xlim(0,3) + geom_tiplab(hjust=-.1, size = 3) +   geom_hilight(node=34, fill="gold") + geom_hilight(node=29, fill="blue") 
+```
+
