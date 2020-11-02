@@ -1,0 +1,46 @@
+---
+title: "lab9_jelia"
+author: "James Elia"
+date: "10/31/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(stringr)
+```
+
+## Exercise 1
+One backslash escapes regular expressisons, a backslash in quotations will be treater as an escape followed by a quotation mark, two backslashes in parentheses will escape from a regular expression and the third backslash will escape you from the string, so four are needed in total.
+```{r}
+x <- "\"\'\\"
+str_view(x, "\"\'\\\\")
+```
+## Exercise 2
+```{r}
+str_view(x, "\\$\\^\\$")
+str_view(x, "^y")
+str_view(x, "x$")
+str_view(x, "^...$")
+```
+
+## Exercise 3
+```{r}
+y <- c("apple", "igloo", "dog","CNN", "reed", "sweated", "wise", "crying")
+str_view(y, "(^a|^e|^i|^o|^u)")
+str_view(y, "[^aeiou]")
+str_view(y,c("ed$", "[eed$]"))
+str_view(y, c("ie","[cei]"))
+str_view(y, "qu")
+str_view(y, "colou?r")
+str_view(y, "1[ ]//d//d//d[ ]//d//d//d[ ]//d//d//d//d")
+```
+
+## Exercise 4
+? is equivalent to {,1}
++ is equivalent to {1,}
+* is equivalent to {0,}
