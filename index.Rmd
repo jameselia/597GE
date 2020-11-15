@@ -41,6 +41,12 @@ This is my website for the UMass Amherst class Evolutionary Genomics, taught by 
 
 [Lab 8: ggtree](lab8_jelia.html)
 
+[Lab 9: Programming in R](lab9_jelia.html)
+
+[Lab 9ex: Programming in R](lab9ex_jelia.html)
+
+[Lab 10: Population Genomics](lab10_jelia.html)
+
 ## References
 
 Title                    = {R: A Language and Environment for Statistical Computing},
