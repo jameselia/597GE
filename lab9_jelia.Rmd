@@ -44,3 +44,4 @@ str_view(y, "1[ ]//d//d//d[ ]//d//d//d[ ]//d//d//d//d")
 ? is equivalent to {,1}
 + is equivalent to {1,}
 * is equivalent to {0,}
+^.*$ is confusing because it's looking for a phrase that starts with . (any character) and ends with {0,} yet there is nothing in between so wouldn't this count everyhting?

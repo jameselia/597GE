@@ -1,0 +1,27 @@
+---
+title: "lab11_jelia"
+author: "James Elia"
+date: "11/9/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+BiocManager::install("phyloseq")
+BiocManager::install("dada2")
+BiocManager::install("DECIPHER")
+library(phyloseq)
+library(dada2)
+library(DECIPHER)
+```
+```{r}
+path <- "C:/Users/eliaj/OneDrive/Documents/UMass/Bio597GE"
+list.files(path)
+taxa <- assignTaxonomy(seqtab.nochim, "C:/Users/eliaj/OneDrive/Documents/UMass/Bio597GE/silva_nr99_v138_train_set.fa.gz", multithread=TRUE)
+dna <- DNAStringSet(getSequences(seqtab.nochim))
+load("C:/Users/eliaj/OneDrive/Documents/UMass/Bio597GE/SILVA_SSU_r138_2019.RData")
+```
+

@@ -1,0 +1,10 @@
+---
+title: "lab9extra_jelia"
+author: "James Elia"
+date: "11/3/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
