@@ -49,6 +49,14 @@ This is my website for the UMass Amherst class Evolutionary Genomics, taught by 
 
 [Lab 11: Microbiome Analysis Using dada2/phyloseq](lab11_jelia.html)
 
+## Memes
+
+[Cell Wall](cellwall.jpg)
+
+[F=ma](physicsmeme.png)
+
+[Inorganic](inorgomeme.png)
+
 ## References
 
 Title                    = {R: A Language and Environment for Statistical Computing},
