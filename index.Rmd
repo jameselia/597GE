@@ -47,6 +47,8 @@ This is my website for the UMass Amherst class Evolutionary Genomics, taught by 
 
 [Lab 10: Population Genomics](lab10_jelia.html)
 
+[Lab 11: Microbiome Analysis Using dada2/phyloseq](lab11_jelia.html)
+
 ## References
 
 Title                    = {R: A Language and Environment for Statistical Computing},
