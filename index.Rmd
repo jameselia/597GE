@@ -52,14 +52,17 @@ This is my website for the UMass Amherst class Evolutionary Genomics, taught by 
 
 [Lab 11: Microbiome Analysis Using dada2/phyloseq](lab11_jelia.html)
 
+[Lab 12: Network Analysis Using Cytoscape and RCy3](lab12_jelia.html)
+
 ## Memes
 
-[Cell Wall](cellwall.jpg)
+![](cellwall.jpg)
 
-[F=ma](physicsmeme.png)
+![](physicsmeme.png)
 
-[Inorganic](inorgomeme.png)
+![](inorgomeme.png)
 
+![](trumptitration.jpg)
 ## References
 
 Title                    = {R: A Language and Environment for Statistical Computing},
