@@ -2,7 +2,10 @@
 title: "index"
 author: "James Elia"
 date: "8/31/2020"
-output: html_document
+output:
+    prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
 editor_options: 
   chunk_output_type: console
 ---

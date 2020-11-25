@@ -1,0 +1,25 @@
+---
+title: "lab12_jelia"
+author: "James Elia"
+date: "11/18/2020"
+output:   
+  prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+BiocManager::install("RCy3")
+library(RCy3)
+cytoscapePing()
+browseVignettes("RCy3")
+```
+
+```{r}
+
+```
+
