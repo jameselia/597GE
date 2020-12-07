@@ -19,7 +19,16 @@ cytoscapePing()
 browseVignettes("RCy3")
 ```
 
-```{r}
+![Cytoscape: Basic Visualization](galFiltered.png)
 
-```
+![Cytoscape: Protein Network](ProteinStringNetwork.png)
 
+![Cytoscape: Disease Network](StringDiseaseNetwork.png)
+
+![RCy3: Vingette Overview](vignette_image.png)
+
+I kept having problems when trying to knit the code despite everything working fine within Cytoscape, so I just posted the png. I promise that this work is my own and I followed the instructions exactly. After a couple hours of troubleshooting, I decided to stop trying to knit the code and just knit the output.
+
+Thanks,
+
+James
